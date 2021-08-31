@@ -1,56 +1,56 @@
-import math
-
+from math import pi
 
 # parent class
-class Polygons:
 
-    def number_of_sides(self):
-        return 0
+class Shapes:
+    def __init__(self, name):
+        self.name = name
 
     def area(self):
-        return 0
+        pass
+    def fact(self):
+        return "I am a two-dimensional shape."
+        
+    
+# child class with it's own functions
 
-    def perimeter(self):
-        return 0
+class Circle(Shapes):
+    def __init__(self, radius, color):
+        super().__init__("Circle")
+        self.radius = radius
+        self.color = color
 
-# child class inherits properties from parent class
-class Pentagon(Polygons):
-    # models properties of a pentagon
+    def area(self):
+        return pi*self.radius**2
 
-    def number_of_sides(self):
-        return 5
+        
+# another child class with it's own functions
 
-    def area(self, a):
-        # formula that returns the area of a pentagon
-        return 1 / 4 * math.sqrt(5 * (5 + 2 * math.sqrt(5))) * a ** 2
+class Square(Shapes):
+    def __init__(self, length, height):
+        super().__init__("Square")
+        self.length = length
+        self.height = height
 
-    def perimeter(self, a):
-        return 5 * a
+    def area(self):
+        return self.length*self.height
 
-# another child class
-class Triangle(Polygons):
-    # models properties of triangle
+    def fact(self):
+        return "All angles in a square are equal."
 
-    def number_of_sides(self):
-        return 3
-    # forumla that returns the area of a triangle
-    def area(self, base, height):
-        return 1 / 2 * base * height
-    # formula that returns the perimiter of a triangle with an else if loop to ensure input is correct.
-    def perimeter(self, a, b, c):
-        if a + b > c:
-            return a + b + c
-        else:
-            return "Invalid input: make sure a + b > c"
-
+        
+        
+        
 
 if __name__ == "__main__":
-    pent = Pentagon()
-    print("Pentagon Area:", pent.area(5))
-    print("Perimeter:", pent.perimeter(7.5))
-    print("-----------------")
 
-    tri = Triangle()
-    print("Triangle Area:", tri.area(10, 20))
-    print("Perimeter:", tri.perimeter(20, 60, 75))
-    print("-----------------")
+    
+    a = Square(5,5)
+    b = Circle(9,'Red')
+    print(a.fact())
+    print("The area of the square is: ", a.area())
+    print("The area of the circle is: ", b.area())
+    
+
+
+    
