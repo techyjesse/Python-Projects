@@ -11,7 +11,7 @@ class Student(ABC):
 class studentSport(Student):
 
     def sport(self,name):
-            print('Our student {} is ready to play sportsball!'.format(name))
+            print('Our student is ready to play {}!'.format(name))
 
 obj = studentSport()
 obj.name("Jesse")
