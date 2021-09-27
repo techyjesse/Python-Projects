@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Account(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -8,7 +9,7 @@ class Account(models.Model):
     Accounts = models.Manager()
 
     def __str__(self):
-        return self.first_name + '' + self.last_name
+        return self.first_name + ' ' + self.last_name
 
 
 TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
@@ -22,4 +23,3 @@ class Transaction(models.Model):
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
     Transactions = models.Manager()
-

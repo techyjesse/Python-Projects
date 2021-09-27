@@ -6,10 +6,11 @@
     <hr>
     <div class="text-center">
         <h5>Manage your existing account!</h5>
+        <!-- Replace the <input> with a Django form including a dropdown list of accounts-->
         <form method="POST">
             <label id="index-label">Choose Account:</label>
             {% csrf_token %}
-            {{form.account}}
+            {{ form.account }}
             <button type="submit">Go to Account</button>
         </form>
     </div>
