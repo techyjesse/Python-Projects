@@ -5,7 +5,7 @@ This repository will contain a collection of Python projects from The Tech Acade
 
 <h2>Projects: </h2><br>
 
-[Phonebook](https://github.com/techyjesse/Python-Projects/tree/main/project_phonebook/project_phonebook)
+[Phonebook](https://github.com/techyjesse/Python-Projects/tree/main/project_phonebook/project_phonebook)<br>
 [Check Files Gui](https://github.com/techyjesse/Python-Projects/tree/main/app_recent_file_transfer)
 
 
