@@ -3,11 +3,10 @@
 This repository will contain a collection of Python projects from The Tech Academy's Full-stack Software Developer Boot-Camp.
 
 
-<h3>Projects:</h3><br>
+<h2>Projects: </h2><br>
 
-<ul>
-  <li>Phonebook</li>
-  <li>Check Files Gui</li>
+[Phonebook](https://github.com/techyjesse/Python-Projects/tree/main/project_phonebook/project_phonebook)
+[Check Files Gui](https://github.com/techyjesse/Python-Projects/tree/main/app_recent_file_transfer)
 
 
 <h3>Phonebook</h3><br>
